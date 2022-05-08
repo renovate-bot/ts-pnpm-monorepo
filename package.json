@@ -11,8 +11,9 @@
     "clean": "lerna run clean",
     "build": "lerna run build",
     "install": "pnpm i",
+    "version": "lerna version",
+    "publish": "lerna publish from-package",
     "test": "lerna run test",
-    "pub": "lerna publish",
     "lint": "eslint --ext js,ts,tsx ."
   },
   "devDependencies": {
