@@ -1,5 +1,5 @@
 {
-  "name": "@nighttrax/webpack-example",
+  "name": "@lerna-ws-test/webpack-example",
   "description": "Example of using webpack in a TS monorepo",
   "private": true,
   "version": "1.0.0",
@@ -7,7 +7,7 @@
     "build": "webpack"
   },
   "dependencies": {
-    "@nighttrax/bar": "workspace:*"
+    "@lerna-ws-test/bar": "workspace:*"
   },
   "devDependencies": {
     "webpack": "~5.67.0",

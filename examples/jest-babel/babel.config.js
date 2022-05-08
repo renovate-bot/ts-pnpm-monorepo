@@ -9,7 +9,7 @@ module.exports = {
       "module-resolver",
       {
         alias: {
-          "^@nighttrax/(.+)": "../../packages/\\1/src",
+          "^@lerna-ws-test/(.+)": "../../packages/\\1/src",
         },
       },
     ],

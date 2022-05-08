@@ -1,5 +1,5 @@
 {
-  "name": "@nighttrax/ts-node",
+  "name": "@lerna-ws-test/ts-node",
   "description": "Example of using ts-node in a TS monorepo",
   "private": true,
   "version": "1.0.0",
@@ -8,7 +8,7 @@
     "test": "pnpm run start"
   },
   "dependencies": {
-    "@nighttrax/foo": "workspace:*"
+    "@lerna-ws-test/foo": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "~16.11.0",

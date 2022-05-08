@@ -23,8 +23,8 @@ importers:
   examples/cra:
     specifiers:
       '@craco/craco': ~6.4.0
-      '@nighttrax/components': '*'
-      '@nighttrax/foo': '*'
+      '@lerna-ws-test/components': workspace:*
+      '@lerna-ws-test/foo': workspace:*
       '@types/jest': ~27.4.0
       '@types/node': ~16.11.0
       '@types/react': ~17.0.0
@@ -36,8 +36,8 @@ importers:
       ts-jest: ~27.1.3
       tsconfig-paths-webpack-plugin: ~3.5.0
     dependencies:
-      '@nighttrax/components': link:../../packages/components
-      '@nighttrax/foo': link:../../packages/foo
+      '@lerna-ws-test/components': link:../../packages/components
+      '@lerna-ws-test/foo': link:../../packages/foo
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     devDependencies:
@@ -56,12 +56,12 @@ importers:
       '@babel/core': ~7.17.0
       '@babel/preset-env': ~7.16.0
       '@babel/preset-typescript': ~7.16.0
-      '@nighttrax/foo': '*'
+      '@lerna-ws-test/foo': workspace:^
       '@types/jest': ~27.4.0
       babel-plugin-module-resolver: ~4.1.0
       jest: ~27.5.0
     dependencies:
-      '@nighttrax/foo': link:../../packages/foo
+      '@lerna-ws-test/foo': link:../../packages/foo
     devDependencies:
       '@babel/core': 7.17.0
       '@babel/preset-env': 7.16.11_@babel+core@7.17.0
@@ -72,14 +72,14 @@ importers:
 
   examples/jest-tsjest:
     specifiers:
-      '@nighttrax/foo': '*'
+      '@lerna-ws-test/foo': workspace:~
       '@types/jest': ~27.4.0
       '@types/node': ~17.0.5
       jest: ~27.5.0
       ts-jest: ~27.1.0
       ts-node: ~10.7.0
     dependencies:
-      '@nighttrax/foo': link:../../packages/foo
+      '@lerna-ws-test/foo': link:../../packages/foo
     devDependencies:
       '@types/jest': 27.4.0
       '@types/node': 17.0.10
@@ -89,11 +89,11 @@ importers:
 
   examples/nestjs:
     specifiers:
+      '@lerna-ws-test/foo': workspace:*
       '@nestjs/cli': ^8.0.0
       '@nestjs/common': ^8.0.0
       '@nestjs/core': ^8.0.0
       '@nestjs/platform-express': ^8.0.0
-      '@nighttrax/foo': '*'
       '@types/express': ^4.17.11
       '@types/node': ^16.0.0
       reflect-metadata: ^0.1.13
@@ -103,10 +103,10 @@ importers:
       tsconfig-paths: ^3.9.0
       typescript: ^4.2.3
     dependencies:
+      '@lerna-ws-test/foo': link:../../packages/foo
       '@nestjs/common': 8.2.6_rctytsz7edgkexb7od7jn5awim
       '@nestjs/core': 8.2.6_fvhog3cei3puq453hd5ryrmd3i
       '@nestjs/platform-express': 8.2.6_omvfjisvr5sie64myt43vlcpd4
-      '@nighttrax/foo': link:../../packages/foo
       reflect-metadata: 0.1.13
       rimraf: 3.0.2
       rxjs: 7.5.2
@@ -120,7 +120,7 @@ importers:
 
   examples/nextjs:
     specifiers:
-      '@nighttrax/components': '*'
+      '@lerna-ws-test/components': workspace:*
       '@types/node': ~16.11.0
       '@types/react': ~17.0.0
       '@types/react-dom': ~17.0.0
@@ -129,7 +129,7 @@ importers:
       react-dom: ~17.0.0
       typescript: ~4.6.0
     dependencies:
-      '@nighttrax/components': link:../../packages/components
+      '@lerna-ws-test/components': link:../../packages/components
       next: 12.1.0_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -141,13 +141,13 @@ importers:
 
   examples/rollup:
     specifiers:
-      '@nighttrax/foo': '*'
+      '@lerna-ws-test/foo': workspace:*
       '@rollup/plugin-typescript': ~8.3.0
       '@types/node': ~16.11.0
       rollup: ~2.70.0
       tslib: ~2.3.0
     dependencies:
-      '@nighttrax/foo': link:../../packages/foo
+      '@lerna-ws-test/foo': link:../../packages/foo
     devDependencies:
       '@rollup/plugin-typescript': 8.3.0_rollup@2.70.0+tslib@2.3.1
       '@types/node': 16.11.21
@@ -156,12 +156,12 @@ importers:
 
   examples/ts-node:
     specifiers:
-      '@nighttrax/foo': '*'
+      '@lerna-ws-test/foo': workspace:*
       '@types/node': ~16.11.0
       ts-node: ~10.7.0
       tsconfig-paths: ~3.14.0
     dependencies:
-      '@nighttrax/foo': link:../../packages/foo
+      '@lerna-ws-test/foo': link:../../packages/foo
     devDependencies:
       '@types/node': 16.11.21
       ts-node: 10.7.0_@types+node@16.11.21
@@ -169,13 +169,13 @@ importers:
 
   examples/webpack:
     specifiers:
-      '@nighttrax/bar': '*'
+      '@lerna-ws-test/bar': workspace:*
       ts-loader: ~9.2.0
       tsconfig-paths-webpack-plugin: ~3.5.0
       webpack: ~5.67.0
       webpack-cli: ~4.9.0
     dependencies:
-      '@nighttrax/bar': link:../../packages/bar
+      '@lerna-ws-test/bar': link:../../packages/bar
     devDependencies:
       ts-loader: 9.2.6_webpack@5.67.0
       tsconfig-paths-webpack-plugin: 3.5.2
@@ -184,24 +184,24 @@ importers:
 
   packages/bar:
     specifiers:
-      '@nighttrax/foo': ^1.0.0
+      '@lerna-ws-test/foo': workspace:^1.0.0
       rimraf: ~3.0.2
       typescript: ~4.6.0
     dependencies:
-      '@nighttrax/foo': link:../foo
+      '@lerna-ws-test/foo': link:../foo
     devDependencies:
       rimraf: 3.0.2
       typescript: 4.6.2
 
   packages/components:
     specifiers:
-      '@nighttrax/foo': '*'
+      '@lerna-ws-test/foo': workspace:*
       '@types/react': ~17.0.0
       react: ~17.0.0
       react-dom: ~17.0.0
       rimraf: ~3.0.2
     dependencies:
-      '@nighttrax/foo': link:../foo
+      '@lerna-ws-test/foo': link:../foo
     devDependencies:
       '@types/react': 17.0.38
       react: 17.0.2

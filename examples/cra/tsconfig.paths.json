@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-
     "paths": {
-      "@nighttrax/components/*": ["../../packages/components/src/*"],
-      "@nighttrax/*": ["../../packages/*/src"],
-
-      "@components/*": ["./src/components/*"],
-      "@hooks/*": ["./src/hooks/*"]
+      "@lerna-ws-test/components/*": [
+        "../../packages/components/src/*"
+      ],
+      "@lerna-ws-test/*": [
+        "../../packages/*/src"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ]
     }
   }
 }

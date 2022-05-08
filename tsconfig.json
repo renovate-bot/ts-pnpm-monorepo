@@ -1,11 +1,14 @@
 {
   "extends": "./tsconfig.build.json",
-
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@nighttrax/components/*": ["packages/components/src/*"],
-      "@nighttrax/*": ["packages/*/src"]
+      "@lerna-ws-test/components/*": [
+        "packages/components/src/*"
+      ],
+      "@lerna-ws-test/*": [
+        "packages/*/src"
+      ]
     },
     "noEmit": true
   }

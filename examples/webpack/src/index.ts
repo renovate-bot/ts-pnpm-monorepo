@@ -1,1 +1,1 @@
-import "@nighttrax/bar";
+import "@lerna-ws-test/bar";
