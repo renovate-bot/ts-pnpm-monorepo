@@ -7,7 +7,7 @@
     "build": "webpack"
   },
   "dependencies": {
-    "@nighttrax/bar": "*"
+    "@nighttrax/bar": "workspace:*"
   },
   "devDependencies": {
     "webpack": "~5.67.0",
