@@ -1,16 +1,16 @@
 {
   "name": "@lerna-ws-test/nextjs-example",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build"
   },
   "dependencies": {
+    "@lerna-ws-test/components": "workspace:*",
     "next": "~12.1.0",
     "react": "~17.0.0",
-    "react-dom": "~17.0.0",
-    "@lerna-ws-test/components": "workspace:*"
+    "react-dom": "~17.0.0"
   },
   "devDependencies": {
     "@types/node": "~16.11.0",

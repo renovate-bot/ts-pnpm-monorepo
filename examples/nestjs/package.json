@@ -1,6 +1,6 @@
 {
   "name": "@lerna-ws-test/nestjs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "prebuild": "rimraf dist",
@@ -9,10 +9,10 @@
     "start:dev": "nest start --watch"
   },
   "dependencies": {
+    "@lerna-ws-test/foo": "workspace:*",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
-    "@lerna-ws-test/foo": "workspace:*",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.0.0"
