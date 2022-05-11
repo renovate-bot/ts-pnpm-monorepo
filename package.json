@@ -17,8 +17,8 @@
     "lint": "eslint --ext js,ts,tsx ."
   },
   "devDependencies": {
-    "@lerna-lite/cli": "^1.1.1",
-    "@lerna-lite/run": "^1.1.1",
+    "@lerna-lite/cli": "^1.2.0",
+    "@lerna-lite/run": "^1.2.0",
     "@nighttrax/eslint-config-tsx": "~10.0.0-beta.0",
     "doctoc": "~2.1.0",
     "eslint": "~8.11.0",
