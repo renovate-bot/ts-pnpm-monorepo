@@ -2,7 +2,7 @@
   "name": "@lerna-ws-test/webpack-example",
   "description": "Example of using webpack in a TS monorepo",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "build": "webpack"
   },
