@@ -1,6 +1,6 @@
 {
   "name": "@lerna-ws-test/components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "build": "pnpm run clean && pnpm run compile",
     "clean": "rimraf -rf ./dist",
