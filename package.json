@@ -10,7 +10,6 @@
     "docs": "doctoc --title '**Table of content**' README.md",
     "clean": "lerna run clean",
     "build": "lerna run build",
-    "install": "pnpm i",
     "version": "lerna version",
     "publish": "lerna publish from-package",
     "test": "lerna run test",
